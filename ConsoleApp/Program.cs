@@ -2,11 +2,13 @@
 
 namespace ConsoleApp
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            new SqlConnectionPulse().Run();
+
+            Console.WriteLine("END of program.");
         }
     }
 }
