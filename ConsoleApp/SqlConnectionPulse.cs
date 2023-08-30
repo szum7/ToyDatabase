@@ -10,9 +10,7 @@ namespace ConsoleApp
     {
         public void Run()
         {
-            string connectionString = @"Server=(localdb)\MSSQLLocalDB;Database=ToyDb1;Integrated Security=True;";
-
-            using (var connection = new SqlConnection(connectionString))
+            using (var connection = new SqlConnection(Common.GetConnectionString("ToyDb1")))
             {
                 connection.Open();
 
